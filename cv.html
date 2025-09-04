@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Emmet Campbell</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional CV-specific styles */
+        .cv-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #2c5aa0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+            background-color: #1e3f73;
+        }
+        
+        .cv-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 1rem;
+        }
+        
+        .cv-header h1 {
+            color: #2c5aa0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cv-header .subtitle {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info a {
+            color: #2c5aa0;
+            text-decoration: none;
+        }
+        
+        .cv-section {
+            margin: 2rem 0;
+        }
+        
+        .cv-section h2 {
+            color: #2c5aa0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cv-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .cv-item h3 {
+            margin-bottom: 0.25rem;
+            color: #333;
+        }
+        
+        .cv-item .meta {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cv-item ul {
+            margin-left: 1rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-category h4 {
+            color: #2c5aa0;
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .cv-container {
+                padding: 1rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <a href="index.html" class="back-button">← Back to Home</a>
+        
+        <div class="cv-header">
+            <h1>Mr Emmet B. T. Campbell</h1>
+            <p class="subtitle"><strong>PhD Researcher | Bacteriophage-Host Interactions | Bioinformatics</strong></p>
+            <div class="contact-info">
+                <span>📧 <a href="mailto:ecampbell50@qub.ac.uk">ecampbell50@qub.ac.uk</a></span>
+                <span>🌐 <a href="https://ecampbell50.github.io">ecampbell50.github.io</a></span>
+                <span>💼 <a href="https://www.linkedin.com/in/emmetcampbell">LinkedIn</a></span>
+                <span>👨‍💻 <a href="https://github.com/ecampbell50">GitHub</a></span>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h2>Education</h2>
+            
+            <div class="cv-item">
+                <h3>PhD in Microbial Bioinformatics</h3>
+                <div class="meta">Queen's University Belfast, Northern Ireland | Expected June 2026</div>
+                <p><em>Thesis: Improving bacteriophage efficacy in gut systems through transcriptomic and metagenomic analysis of the effect of novel synthetic biology-generated phage therapies</em></p>
+                <p>Funded by Department of Agriculture and Rural Affairs (DAERA)</p>
+            </div>
+
+            <div class="cv-item">
+                <h3>BSc Microbiology with Professional Studies</h3>
+                <div class="meta">Queen's University Belfast, Northern Ireland | 2022</div>
+                <p>First Class Honours</p>
+            </div>
+
+            <div class="cv-item">
+                <h3>FD Biological Sciences</h3>
+                <div class="meta">Queen's University Belfast, Northern Ireland | 2019</div>
+                <p>Pass with High Commendation</p>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h2>Professional Experience</h2>
+            
+            <div class="cv-item">
+                <h3>PhD Researcher</h3>
+                <div class="meta">School of Biological Sciences, Queen's University Belfast | 2022 - Present</div>
+                <ul>
+                    <li>Genome annotation pipelines of antiviral defence genes in bacteria</li>
+                    <li>Large-scale in silico network biology approaches to bacteriophage-host interactions</li>
+                    <li>Transcriptomic analysis of bacteriophage-host interactions in <em>Streptococcus suis</em></li>
+                    <li>Prophage-host co-evolution</li>
+                    <li>Metagenomic analysis of rumen microbiomes</li>
+                    <li>Supervising undergraduate and postgraduate students in laboratory and computational methods</li>
+                </ul>
+            </div>
+
+            <div class="cv-item">
+                <h3>Sterility Assurance Intern</h3>
+                <div class="meta">AbbVie Ballytivnan, Sligo, Ireland | 2020 - 2021</div>
+                <ul>
+                    <li>14-month placement at biopharmaceutical facility</li>
+                    <li>SOP creation and maintenance</li>
+                    <li>Trained in ALCOA principles</li>
+                    <li>Created and trained staff in sterility-assurance gowning technique JSTMs</li>
+                    <li>Delivered 3-hour training lectures on sterility assurance to contractors and staff entering Grade D, C, and B cleanrooms</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h2>Publications</h2>
+            <p><strong>In Preparation:</strong></p>
+            <ol>
+                <li><strong>Campbell, E.B.T.</strong>, Skvortsov, T., Dillon, L., Huws, S., Creevey, C.J. "The antiviral defence profile of <em>Streptococcus suis</em>"</li>
+                <li><strong>Campbell, E.B.T.</strong>, Skvortsov, T., Dimonaco, N.J., Creevey, C.J. "Genome k-mer similarity networks of bacteria/prophages linked to anti-viral defence genes describes co-evolution patterns"</li>
+                <li><strong>Campbell, E.B.T.</strong>, Osei, E., Skvortsov, T., Huws, S., Kenny, J., Mahony, J., Creevey, C.J. "The transcriptomic response of <em>Streptococcus suis</em> to phage infection"</li>
+            </ol>
+        </div>
+
+        <div class="cv-section">
+            <h2>Conference Presentations & Awards</h2>
+            
+            <div class="cv-item">
+                <h3>2025</h3>
+                <ul>
+                    <li><strong>1st Place Oral Presentation</strong> - Understanding Health & Disease Theme, School of Biological Sciences, QUB</li>
+                </ul>
+            </div>
+
+            <div class="cv-item">
+                <h3>2024</h3>
+                <ul>
+                    <li><strong>3rd Place Poster Award</strong> - Microbiology Society Early Career Microbiologist of the Year 2024</li>
+                    <li><strong>1st Place Oral Presentation</strong> - Agricultural Theme, School of Biological Sciences, QUB</li>
+                </ul>
+            </div>
+
+            <div class="cv-item">
+                <h3>2023</h3>
+                <ul>
+                    <li><strong>2nd Place</strong> - 3-Minute Thesis Competition, School of Biological Sciences, QUB</li>
+                    <li><strong>Best Poster Award</strong> - VIBE (Virtual Institute of Bioinformatics and Evolution)</li>
+                </ul>
+            </div>
+
+            <div class="cv-item">
+                <h3>2021</h3>
+                <ul>
+                    <li><strong>Best Presentation Award</strong> - AbbVie Ballytivnan</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h2>Teaching & Supervision Experience</h2>
+            
+            <div class="cv-item">
+                <h3>Demonstrator</h3>
+                <div class="meta">Queen's University Belfast | 2022 - Present</div>
+                <ul>
+                    <li>Demonstrated in 3-day courses in both bash/HPC-usage and R to PhD students</li>
+                    <li>Demonstrated laboratory practicals for undergraduate students</li>
+                    <li>Demonstrated bioinformatics practicals and tutorials for DeSeq2, Galaxy</li>
+                    <li>Delivered lecture on referencing and plagiarism for A-level summer school pathway-to-university programme</li>
+                </ul>
+            </div>
+
+            <div class="cv-item">
+                <h3>Student Supervision</h3>
+                <div class="meta">2023 - Present</div>
+                <ul>
+                    <li>Supervised multiple undergraduate research projects</li>
+                    <li>Co-supervised Masters student project: "Using machine learning models to predict prophage/plasmid links to antimicrobial resistance"</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Programming & Computational Biology</h4>
+                    <ul>
+                        <li>Bash, Python, R</li>
+                        <li>High Performance Computing (HPC) and SLURM job scheduling</li>
+                        <li>Version control (Git)</li>
+                        <li>HTML, CSS</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Bioinformatics</h4>
+                    <ul>
+                        <li>Genome assembly and annotation</li>
+                        <li>Phylogenetic analysis</li>
+                        <li>Pangenome analysis</li>
+                        <li>Network biology</li>
+                        <li>Transcriptomic analysis</li>
+                        <li>Metagenomic analysis</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Databases & Tools</h4>
+                    <ul>
+                        <li>NCBI (GenBank, SRA)</li>
+                        <li>BV-BRC (formerly PATRIC)</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Laboratory Techniques</h4>
+                    <ul>
+                        <li>Sterile working techniques</li>
+                        <li>Cell culture and reseeding</li>
+                        <li>Antibiotic assays</li>
+                        <li>Quality control procedures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-section">
+            <h2>Professional Memberships</h2>
+            <ul>
+                <li>Microbiology Society</li>
+                <li>Royal Society of Biology</li>
+                <li>International Society for Computational Biology (ISCB)</li>
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Lean Six Sigma Yellow Belt</li>
+            </ul>
+        </div>
+
+        <div class="cv-section">
+            <h2>Research Interests</h2>
+            <p>Bacteriophage-host interactions, Microbiomes, Network biology, Synthetic biology applications, Transcriptomics and metagenomics, Antimicrobial resistance, Virology, Computational biology and bioinformatics, Astrobiology, Extremophiles</p>
+        </div>
+
+        <a href="index.html" class="back-button">← Back to Home</a>
+    </div>
+</body>
+</html>
