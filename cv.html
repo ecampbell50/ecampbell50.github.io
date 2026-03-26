@@ -21,7 +21,7 @@
             position: relative;
             z-index: 1;
         }
-        
+
         .back-button {
             display: inline-block;
             padding: 0.75rem 1.5rem;
@@ -33,87 +33,76 @@
             font-weight: bold;
             transition: background-color 0.3s;
         }
-        
+
         .back-button:hover {
             background-color: #1e3f73;
         }
-        
+
         .cv-header {
             text-align: center;
             margin-bottom: 2rem;
             border-bottom: 2px solid #2c5aa0;
             padding-bottom: 1rem;
         }
-        
+
         .cv-header h1 {
             color: #2c5aa0;
             margin-bottom: 0.5rem;
         }
-        
+
         .cv-header .subtitle {
             font-style: italic;
             color: #666;
             margin-bottom: 1rem;
         }
-        
+
         .contact-info {
             display: flex;
             justify-content: center;
             gap: 2rem;
             flex-wrap: wrap;
         }
-        
+
         .contact-info a {
             color: #2c5aa0;
             text-decoration: none;
         }
-        
+
         .cv-section {
             margin: 2rem 0;
         }
-        
+
         .cv-section h2 {
             color: #2c5aa0;
             border-bottom: 1px solid #ddd;
             padding-bottom: 0.5rem;
             margin-bottom: 1rem;
         }
-        
+
         .cv-item {
             margin-bottom: 1.5rem;
         }
-        
+
         .cv-item h3 {
             margin-bottom: 0.25rem;
             color: #333;
         }
-        
+
         .cv-item .meta {
             font-style: italic;
             color: #666;
             margin-bottom: 0.5rem;
         }
-        
+
         .cv-item ul {
             margin-left: 1rem;
         }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-        
-        .skill-category h4 {
-            color: #2c5aa0;
-            margin-bottom: 0.5rem;
-        }
-        
+
         @media (max-width: 768px) {
             .cv-container {
                 padding: 1rem;
             }
-            
+
             .contact-info {
                 flex-direction: column;
                 gap: 0.5rem;
@@ -123,35 +112,34 @@
 </head>
 <body>
     <div class="cv-container">
-        <a href="index.html" class="back-button">← Back to Home</a>
-        
+        <a href="index.html" class="back-button">&larr; Back to Home</a>
+
         <div class="cv-header">
             <h1>Emmet Campbell</h1>
-            <p class="subtitle"><strong>PhD Researcher | School of Biological Sciences | Queen's University Belfast</strong></p>
+            <p class="subtitle"><strong>PhD Researcher, School of Biological Sciences, Queen's University Belfast</strong></p>
             <div class="contact-info">
-                <span>📧 <a href="mailto:ecampbell50@qub.ac.uk">ecampbell50@qub.ac.uk</a></span>
-                <span>📱 +447732286306</span>
-                <span>👨‍💻 <a href="https://github.com/ecampbell50">github.com/ecampbell50</a></span>
+                <span>&#x1F4E7; <a href="mailto:ecampbell50@qub.ac.uk">ecampbell50@qub.ac.uk</a></span>
+                <span>&#x1F4DE; +447732286306</span>
+                <span>&#x1F468;&#x200D;&#x1F4BB; <a href="https://github.com/ecampbell50">github.com/ecampbell50</a></span>
             </div>
         </div>
 
         <div class="cv-section">
             <h2>Research Experience</h2>
-            
+
             <div class="cv-item">
-                <h3>PhD Research</h3>
-                <div class="meta">School of Biological Sciences, Queen's University Belfast | 2022 - Present</div>
-                <p><strong>Thesis submission: July 2026</strong></p>
-                <p><em>Working title: Improving bacteriophage efficacy in gut systems through transcriptomic and metagenomic analysis of the effect of novel synthetic biology-generated phage therapies</em></p>
+                <h3>PhD Research, School of Biological Sciences, Queen's University Belfast</h3>
+                <div class="meta">2022 - Present | Thesis submission: July 2026</div>
                 <ul>
                     <li>Annotation of genomic data (ORFs, StORFs, COGs, antiviral defence genes)</li>
                     <li>Detection of prophages within genomic and metagenomic data</li>
                     <li>Assembly of genomes/metagenomes, quality checks, decontamination of reads, taxonomic assignment of reads, alignment of reads to indices, contig assembly, binning</li>
                     <li>Time-resolved gene expression of phage/host during infection</li>
-                    <li>Large-scale in silico genome similarity networks</li>
+                    <li>Large-scale <em>in silico</em> genome similarity networks</li>
                     <li>Python tool and pipeline creation for analysing and annotating large genomic datasets</li>
                     <li>Pangenome analyses, genome synteny</li>
                     <li>Phylogenetic tree construction of species using core gene alignment/marker genes</li>
+                    <li>Species-tree aware gene family tree reconstruction</li>
                 </ul>
             </div>
         </div>
@@ -164,45 +152,49 @@
                 <li>Python/R-scripting including: Jupyter notebooks, Conda environments, Singularity containers, Snakemake/Nextflow workflows</li>
                 <li>Use of Git version control</li>
                 <li>Installation and debugging of bioinformatic tools</li>
-                <li>Statistical analysis using RStudio/Python libraries</li>
+                <li>Statistical analysis using Rstudio/python libraries</li>
             </ul>
         </div>
 
         <div class="cv-section">
             <h2>Awards</h2>
             <ul>
+                <li><strong>1st Place</strong> - School of Biological Sciences PGR Symposium, Understanding Health and Disease Theme</li>
                 <li><strong>3rd Place</strong> - Microbiology Society's Early Career Researcher of the Year (2024) - poster presentation</li>
-                <li><strong>William and Betty McQuitty Travel Scholarship</strong> for travel to RECOMB in Boston, 2024 (£1000)</li>
-                <li><strong>2nd Place</strong> - 3-Minute Thesis: School of Biological Sciences, QUB (2023)</li>
-                <li><strong>Best Intern Presentation</strong> - AbbVie Ballytivnan (2021)</li>
+                <li>William and Betty McQuitty travel Scholarship for travel to RECOMB in Boston, 2024 (&pound;1000)</li>
+                <li><strong>1st Place</strong> - School of Biological Sciences PGR Symposium, Agricultural Theme</li>
+                <li><strong>2nd Place</strong> - 3-minute Thesis: School of Biological Sciences, QUB (2023)</li>
+                <li>Virtual Institute of Bioinformatic and Evolution (VIBE) Poster presentation</li>
+                <li>Best Intern Presentation - AbbVie Ballytivnan (2021)</li>
             </ul>
         </div>
 
         <div class="cv-section">
             <h2>Education</h2>
-            
+
             <div class="cv-item">
                 <h3>PhD Bioinformatics</h3>
                 <div class="meta">Queen's University Belfast | 2022 - Present</div>
-                <p><em>Working title: Improving bacteriophage efficacy in gut systems through transcriptomic and metagenomic analysis of the effect of novel synthetic biology-generated phage therapies</em></p>
+                <p><em>(Working title) Improving bacteriophage efficacy in gut systems through transcriptomic and metagenomic analysis of the effect of novel synthetic biology-generated phage therapies</em></p>
             </div>
 
             <div class="cv-item">
                 <h3>BSc (Hons) Microbiology with Professional Studies</h3>
                 <div class="meta">Queen's University Belfast | 2019 - 2022</div>
                 <p>First Class Honours</p>
+                <p><em>Dissertation: Probing the Molecular Requirements for Antifungal Drug Tolerance in the Human Pathogen <em>Candida glabrata</em></em></p>
             </div>
 
             <div class="cv-item">
                 <h3>FD Biological Sciences</h3>
                 <div class="meta">Queen's University Belfast | 2017 - 2019</div>
-                <p>Pass with High Commendation</p>
+                <p>Pass (with High Commendation)</p>
             </div>
         </div>
 
         <div class="cv-section">
             <h2>Teaching Experience</h2>
-            
+
             <div class="cv-item">
                 <h3>QUB - Pathway-to-University Program</h3>
                 <div class="meta">Summer 2024/2025</div>
@@ -210,20 +202,20 @@
             </div>
 
             <div class="cv-item">
-                <h3>Demonstrator</h3>
-                <div class="meta">Queen's University Belfast | 2022 - Present</div>
-                <p>Assisted in delivering practical sessions for RStudio/Linux-shell scripting and HPC-job submissions to Undergraduate/Masters/PhD students</p>
+                <h3>Demonstrator, Queen's University Belfast</h3>
+                <div class="meta">2022 - Present</div>
+                <p>Assisted in delivering practical sessions for Rstudio/linux-shell scripting and HPC-job submissions to Undergraduate/Masters/PhD students</p>
             </div>
 
             <div class="cv-item">
-                <h3>Mentor</h3>
-                <div class="meta">Queen's University Belfast | 2022 - Present</div>
+                <h3>Mentor, Queen's University Belfast</h3>
+                <div class="meta">2022 - Present</div>
                 <p>Assisting in supervision of undergraduate and masters research projects on topics such as AMR-prophage interactions, machine learning methods, synthetic biology application of phages</p>
             </div>
 
             <div class="cv-item">
-                <h3>Sterile Fill-Finish Cleanroom Behaviour</h3>
-                <div class="meta">AbbVie Ballytivnan | 2020 - 2021</div>
+                <h3>Sterile fill-finish cleanroom behaviour, AbbVie Ballytivnan</h3>
+                <div class="meta">2020 - 2021</div>
                 <p>Consistently delivered a 3-hour lecture on gowning, behaviours, and operations within Grade D and C cleanrooms, and Grade A isolator interventions to over 150 staff and contractors. Lecture adapted from National Institute for Bioprocessing Research and Training. Subsequently trained and examined staff to qualify them for working in cleanroom environments.</p>
             </div>
         </div>
@@ -240,12 +232,39 @@
         <div class="cv-section">
             <h2>Membership of Professional Societies</h2>
             <ul>
-                <li>International Society for Computational Biology (2024 - Present)</li>
-                <li>Microbiology Society (2022 - Present)</li>
+                <li>International Society for Computational Biology (2024-Present)</li>
+                <li>Microbiology Society (2022-Present)</li>
             </ul>
         </div>
 
-        <a href="index.html" class="back-button">← Back to Home</a>
+        <div class="cv-section">
+            <h2>Academic Service</h2>
+            <p>Assisted in peer review, <em>Microbiome</em> (Springer Nature)</p>
+        </div>
+
+        <div class="cv-section">
+            <h2>Publications</h2>
+            <p><strong>Published:</strong></p>
+            <ol>
+                <li>Barnes K, Hayes M, Miller F, Yanez-Ruiz D, Jimenez E, Dillon L, <strong>Campbell E</strong>, McCarron P, Pickup J, Huws S, Theodoridou K. Temperate seaweeds <em>Himanthalia elongata</em> and <em>Fucus vesiculosus</em> significantly reduce rumen methane emissions in vitro due to their high phlorotannin content. <em>J Sci Food Agric.</em> 2025</li>
+            </ol>
+            <p><strong>In Preparation:</strong></p>
+            <ol>
+                <li><strong>Emmet B. T. Campbell</strong>, Timofey Skvortsov, Christopher J. Creevey: "The antiviral defence profile of <em>Streptococcus suis</em> and its distribution across pathogenic lineages"</li>
+                <li><strong>Emmet B. T. Campbell</strong>, Emmanuel Osei, Jennifer Mahony, John Kenny, Timofey Skvortsov, Sharon A. Huws, Christopher J. Creevey: "The transcriptomic response of <em>S. suis</em> to bacteriophage infection"</li>
+                <li>Lucy Dillon, Francesco Rubino, <strong>Emmet B. T. Campbell</strong>, Nicholas J. Dimonaco, Timofey Skvortsov, Karen Siu-Ting, Christopher J. Creevey: "From farm to table: the genomic variation landscape of the food chain microbiome"</li>
+            </ol>
+        </div>
+
+        <div class="cv-section">
+            <h2>Referees</h2>
+            <ul>
+                <li>Prof. Christopher Creevey, School of Biological Sciences, QUB - <a href="mailto:chris.creevey@qub.ac.uk">chris.creevey@qub.ac.uk</a></li>
+                <li>Dr. Timofey Skvortsov, School of Pharmacy, QUB - <a href="mailto:t.skvortsov@qub.ac.uk">t.skvortsov@qub.ac.uk</a></li>
+            </ul>
+        </div>
+
+        <a href="index.html" class="back-button">&larr; Back to Home</a>
     </div>
 </body>
 </html>
